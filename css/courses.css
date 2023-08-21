@@ -1,0 +1,158 @@
+.courses {
+  width: 100%;
+  min-height: calc(100vh - var(--header-height));
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.courses .container .title {
+  font-size: 22px;
+  color: var(--pry-color);
+  font-weight: 600;
+}
+
+.courses .container .select-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 25px;
+}
+
+.courses .container .select-section .select-art .selection-title {
+  font-size: 20px;
+  color: var(--dark-color);
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.courses .container .select-section .select-art .option-bar {
+  width: 280px;
+  height: 40px;
+  background-color: #fdfdfd;
+  box-shadow: 3px 3px 8px 0px #00000016;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  border: 1px solid var(--dark-color);
+  cursor: pointer;
+}
+.courses .container .select-section .select-art .option-bar .option-title {
+  font-size: 14px;
+  color: var(--pry-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.courses .container .select-section .select-art .option-bar .arrow {
+  font-size: 16px;
+  color: var(--pry-color);
+}
+
+.courses .container .select-section .select-art .options-area {
+  border: 1px solid var(--dark-color);
+  border-top: none;
+  padding: 15px 25px 0;
+  height: auto;
+
+  flex-direction: column;
+  transition: top 0.4s ease;
+}
+.courses
+  .container
+  .select-section
+  .select-art
+  .options-area
+  .option-for-selection {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--pry-color);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/*  */
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  padding-top: 50px;
+  gap: 30px;
+}
+.courses-container .card {
+  width: 320px;
+  min-height: 350px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  box-shadow: 3px 3px 17px 0 #00000016;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.courses-container .card .img-section {
+  position: relative;
+  width: 100%;
+  height: 60%;
+}
+
+.courses-container .card .img-section .main-img {
+  width: 100%;
+  height: 100%;
+}
+
+.courses-container .card .img-section .second-img {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.courses-container .card .text-section {
+  width: 100%;
+  height: 100%;
+  padding: 30px 25px;
+}
+
+.courses-container .card .text-section .title {
+  font-size: 14px;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.courses-container .card .text-section .desc {
+  font-size: 12px;
+  color: #505050;
+}
+
+.courses-container .card .text-section .visit-link {
+  padding: 6px 15px;
+  background-color: var(--pry-color);
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: var(--radius);
+  margin-top: 5px;
+  display: inline-block;
+  transition: var(--trans);
+}
+
+.courses-container .card .text-section .visit-link:hover {
+  background-color: var(--dark-color);
+}
+
+@media (max-width: 860px) {
+  .courses-container {
+    width: 100%;
+  }
+  .courses-container {
+    width: 100%;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .courses-container .card {
+    width: 280px;
+  }
+}
